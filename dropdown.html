@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dropdown.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          
+          <a href="#" class="logo">Logo</a>
+          
+          <input type="checkbox" id="hamburger" aria-label="menu button">
+          <label for="hamburger"><span></span></label>
+          
+          <nav aria-label="main navigation">
+            <ul class="menus">
+              <li><a href="#">Home</a></li>
+              <li>
+                <button 
+                  type="button" 
+                  aria-haspopup="true" 
+                  aria-expanded="true" 
+                  aria-controls="dropdown1"  
+                >
+                  Services<span class="arrow"></span>   
+                </button>
+                <ul class="dropdown" id="dropdown1">
+                  <li><a href="#">Web design</a></li> 
+                  <li><a href="#">Web dev</a></li>
+                  <li><a href="#">Web</a></li>
+                </ul>
+              </li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+</body>
+</html>
